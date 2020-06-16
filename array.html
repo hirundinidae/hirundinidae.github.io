@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Diana's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="navigation">
+      <a style="padding:14px 16 px; float:left;" href="index.html">Diana Lin</a>
+      <a href="about.html">About</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="projects.html">Projects</a>
+    </div>
+    <h1>
+      Array & ArrayList
+    </h1>
+    <h2>
+      Array
+    </h2>
+    <p>
+      An array is a data structure in Java that can store many values of the same type. For example, it can store integers, floats, Strings, or classes. Arrays allow for a group of data to be accessed with 1 variable name, the n
+      ame of the array.
+    </p>
+    <h3>
+      Declaring an Array
+    </h3>
+    <p>
+      This is how an array is declared:
+    </p>
+    <pre>
+      <code>type[] name;</code>
+    </pre>
+    <p>
+      The array can be initialized like this:
+    </p>
+    <pre>
+      <code>type[] name = new type[size];</code>
+    </pre>
+    <pre>
+      <code>int[] arr = new int[4];</code>
+    </pre>
+    <p>
+      This means that a new int array called 'arr' is created, with 4 indices.
+    </p>
+    <p>
+      Alternatively, an array can be initialized like this
+    </p>
+    <pre>
+      <code>int[] arr = { 3, 4, 6, 7 };</code>
+    </pre>
+    <h3>
+      Accessing values in an array
+    </h3>
+
+    <p>
+      Values in an array can be accessed like so:<code>name[index] = value;</code>
+    </p>
+    <pre>
+      <code>System.out.println(arr[0]);</code>
+    </pre>
+    <p>
+      will print 3
+    </p>
+
+    <p>
+      The values in an array can be changed by assigning a value to a specific index. name [index] = value;
+    </p>
+    <p>
+      So, to change the value 4 in the array to 9, we can do <code>arr[1] = 9;</code>
+    </p>
+    <p>
+      Arrays have a static size, meaning that the size cannot be changed after it is initialized. This is useful to know in an example of inserting a value at an index. This code shows how to insert the value 10 in between the numbers 6 and 7 in
+      the array above.
+    </p>
+
+    <pre>
+      <code>
+    int [] otherArr = new int [5]; // the new array will be 1 index longer than arr
+
+    otherArr[0] = arr[0]; // copies the value over
+
+    otherArr[1] = arr[1]; // copies the value over
+
+    otherArr[2] = arr[2]; // copies the value over
+
+    otherArr[3] = 10; // between arr[2] and arr[3], add the value 10
+
+    otherArr[4] = arr[3]; // copies the value over
+    </code>
+  </pre>
+    <p>
+      Now the array otherArr has the values <code>{3,9,6,10,7}</code>
+    </p>
+    <h2>
+      ArrayList
+    </h2>
+    <p>
+      ArayLists are similar to arrays because they are also used to store values that can be referred to with 1 name. The main difference between the two is the dynamic size of ArrayLists. Before using an ArrayList,<code>java.util.ArrayList</code>
+      must be
+      imported.
+    </p>
+
+    <h3>
+      Declaring and initializing an ArrayList
+    </h3>
+
+    <pre>
+      <code>ArrayList <Type> name = new ArrayList<Type>();</code>
+      <code>ArrayList<Integer> arrList = new ArrayList<Integer>();</code>
+    </pre>
+    <p>
+      This creates a new Integer ArrayList called arrList. Values can be added to the ArrayList using the <code>add()</code> method.
+    </p>
+    <pre>
+      <code>arrList.add(1);</code>
+
+      <code>arrList.add(4);</code>
+    </pre>
+    <p>
+      This adds the Integer 1 and 4 to the list, so the contents of arrList are now<code>{1,4}</code>and the size of arrList is 2.
+      Accessing values in an ArrayList
+    </p>
+    <p>
+      Values can be accessed with the<code>get()</code>method.
+    </p>
+    <pre>
+      <code>arrList.get(0);</code>
+    </pre>
+    <p>
+      will return 1.
+    </p>
+
+  </body>
+
+</html>

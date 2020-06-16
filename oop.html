@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <!-- <meta name="description" content="This is a description of my website"> -->
+    <title>Diana's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="navigation">
+      <a style="padding:14px 16 px; float:left;" href="index.html">Diana Lin</a>
+      <a href="about.html">About</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="projects.html">Projects</a>
+    </div>
+    <h1>Object Oriented Programming</h1>
+    <h2>What is Objet Oriented Programming?</h2>
+    <p>There are 4 main models of programming, Imperative, Functional, Logical, and Object Oriented. </p>
+    <p>Object Oriented Programming, or OOP, is a style of programming that uses the idea of 'objects'. These objects have data or information about them, such as it's characteristics and abilities. Objects can interact with other objects, just like
+      in real life. A person is an object, and a person can interact with other people</p>
+    <p>For example: an animal is an object. An animal can interact with the environment around them, such as other animals, and other entities. An animal also has capabilities, such as eating, drinking, and sleeping, and characteristics, like number
+      of legs, diet, size, etc.</p>
+    <p>In the example of an Animal created as an instance of an Animal class, the characteristics and abilities can be shown in this class: </p>
+    <pre>
+      <code>
+public class Animal {
+  // an animal's attributes or characteristics
+	private int numLegs;
+	private String diet;
+	private int weight;
+
+	public Animal () {
+	  numLegs = 4;
+          diet = omnivorous;
+          weight = 10;
+        }
+
+	// an animal's abilities
+	public void eat(){...}
+	public void drink(){...}
+	public void sleep(){...}
+
+	public static void main(String[] args) {
+	   Animal a = new Animal();
+	}
+}
+      </code>
+    </pre>
+    <p>When an object of the Animal class is created, the methods and variables are inherited, and the object has all the characteristics and attributes of the class. </p>
+    <p>OOP allows for an easier to understand program structure and avoids duplication. These allow for a more efficient developing.</p>
+  </body>
+
+
+</html>

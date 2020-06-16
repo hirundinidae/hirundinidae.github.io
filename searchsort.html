@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <!-- <meta name="description" content="This is a description of my website"> -->
+    <title>Diana's Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <div class="navigation">
+      <a style="padding:14px 16 px; float:left;" href="index.html">Diana Lin</a>
+      <a href="about.html">About</a>
+      <a href="tutorials.html">Tutorials</a>
+      <a href="projects.html">Projects</a>
+    </div>
+    <h1>Search and Sort</h1>
+    <p>A bank retrieving your account information at an ATM. Looking up a word in the dictionary. Being called for attendance in order of surname. All these are examples of searching and sorting being used in our every day lives. Having sorted data
+      makes it easier to access, modify and manipulate information. </p>
+    <h2>Sorting</h2>
+    <p>There are many sorting algorithms, each with different levels of efficiency, and best cases to use them.</p>
+    <h3>Bubble Sort</h3>
+    <p>Bubble sort is a simple sorting algorithm that compares each element with the next. </p>
+    <p>This is code showing how to sort an arrayList numbers with the integers <code>{34,76,12,57,3}</code></p>
+    <pre>
+      <code>
+        for (int i = 0; i < numbers.size(); i++) {
+	          for (int k = 1; k < numbers.size() - i; k++) {
+		            if (numbers.get(k)>numbers.get(k - 1)) {
+			               numbers temp = numbers.get(k);
+			               numbers.set(k, numbers.get(k - 1));
+			               numbers.set(k - 1, temp);
+		                 }
+	          }
+       }         </code>
+  </pre>
+    <h3>Merge Sort</h3>
+    <p>While bubble sort may be more effective for smaller sets of data, merge sort can generally be more efficient. </p>
+    <p>This is a video my assignment partner, Steven Guikal and I made about the merge sort algorithm.</p>
+    <iframe src="https://drive.google.com/file/d/10qliYYDK-UY_6v-sTyT1I46UTllUS8d3/preview" width="640" height="480"></iframe>
+    <h2>Searching</h2>
+    <p>There are also a great number of searching algorithms. </p>
+    <h3>Sequential Search</h3>
+    <p>One of the simplest would be sequential search, which involves traversing through every piece of data until the desired data is found. </p>
+    <p>This is code showing sequential search for the number <code>5</code> in the array numbers<code>{4,8,2,5,6}</code></p>
+    <pre>
+      <code>
+        public int search(int n) { // pass desired number
+	       for(int i =0; i< numbers.length; i++) { //traverse through array
+		         if (arr[i] == n) // if the index value is n
+			          return i; // return the index n is found
+	           }
+	       return -1; // return -1 if the number is not found
+       }
+     </code>
+   </pre>
+    <h3>Binary Search</h3>
+    <p>In worst case scenarios, sequential search accesses all the values in an array (the desired value is in the last position while the search starts from the beginning). A more efficient searching algorithm would be binary search. Binary search
+      requires a sorted set of data, continually looking in only half of the set until the desired data is found. </p>
+    <p>For example, there is an array numbers with the values <code>{5,8,9,12,45}</code></p>
+    <p> For example, there is an array numbers with the values <code>{5,8,9,12,45}</code></p>
+
+    <p>If the desired value is 8, the algorithm will look consider the value in the middle of the array: <code>9</code></p>
+    <p>Since 8 < 9, it will consider the first half of the array, <code>{5,8,9}</code></p>
+
+    <p>The value in the middle of the array is 8, and the index 1 can be returned, indicating that the number 8 is at index 1.</p>
+    <p>It is important that the data is sorted to use binary search, because otherwise, whether a value is less than or greater than the middle index cannot be determined. </p>
+  </body>
+
+
+</html>

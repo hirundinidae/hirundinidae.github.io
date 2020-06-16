@@ -1,0 +1,81 @@
+/* Style all body content */
+body {
+  font-family:"georgia";
+}
+
+h1 {
+  text-align:center
+}
+
+/* Add a background color to the top navigation */
+.navigation {
+  background-color: #061445;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.navigation a {
+  float: right;
+  color: #cad2ed;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.home{
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.intro{
+  padding-left:20%;
+  padding-right:20%;
+  text-align:center;
+}
+
+/* Style the projects page */
+.projects{
+  text-align:center;
+}
+
+/* Style the links in project list */
+.projects a {
+  text-decoration:none;
+}
+
+/* style the code snippets  */
+code{
+  margin:0px;
+  margin-left:10px;
+}
+
+/* Style the image */
+.tutorial-img{
+  width:100%;
+  text-align:center;
+}
+
+/* Style tutorials */
+.tutorial-link{
+  text-align:center;
+  width:100%;
+}
+
+/* Style tutorial links */
+ .tutorial-link a {
+  float:left;
+  text-decoration:none;
+  font-size:17px;
+  width:24%;
+  border:solid;
+}
+
+.about{
+  padding-left:20%;
+  padding-right:20%;
+  text-align:center;
+}
