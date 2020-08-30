@@ -48,7 +48,7 @@ h1 {
 }
 
 /* style the code snippets  */
-code{
+.code{
   margin:0px;
   margin-left:10px;
 }
@@ -82,4 +82,10 @@ code{
 
 .no {
 
+}
+
+.icon {
+  width:45px;
+  height:45px;
+  padding: 11.25px;
 }
